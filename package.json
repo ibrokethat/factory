@@ -1,0 +1,26 @@
+{
+  "name": "super-factory",
+  "description": "super factories the functional way",
+  "version": "0.0.1",
+  "author": "si@ibrokethat.com",
+  "contributors": [
+    { "name": "Simon Jefford", "email": "si@ibrokethat.com" }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "latest",
+    "mocha": "latest",
+    "sinon": "latest"
+  },
+  "keywords": ["ibrokethat", "factories"],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ibrokethat/factory"
+  },
+  "main": "iter.js",
+  "scripts": {
+    "prepublish" : "npm prune",
+    "test": "node --harmony --harmony_typeof ./node_modules/mocha/bin/_mocha --colors --recursive --ui bdd --reporter spec ./test --NODE_ENV=test"
+  },
+  "engines": {"node": "0.11.x"}
+}
