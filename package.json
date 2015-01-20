@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git@github.com:ibrokethat/factory"
   },
-  "main": "iter.js",
+  "main": "factory.js",
   "scripts": {
     "prepublish" : "npm prune",
     "test": "node --harmony --harmony_typeof ./node_modules/mocha/bin/_mocha --colors --recursive --ui bdd --reporter spec ./test --NODE_ENV=test"
