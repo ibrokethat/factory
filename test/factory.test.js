@@ -33,5 +33,24 @@ describe("test factory module: ", () => {
     expect(underTest(items, 4)).to.be.equal(160);
   });
 
+  it('should should throw if items supplied are not in a Map', () => {
+
+    expect(() => underTest([], 1)).to.throw;
+  });
+
+  it('should should throw if matchers are not functions', () => {
+
+    items.set({}, {});
+
+    expect(() => underTest(items, 5)).to.throw;
+  });
+
+  it('should should throw if fns are not functions', () => {
+
+    items.set(() => {}, {});
+
+    expect(() => underTest(items, 5)).to.throw;
+  });
+
 
 });
