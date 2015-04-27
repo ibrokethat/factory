@@ -40,7 +40,7 @@ describe("test factory module: ", () => {
 
   it('should should throw if matchers are not functions', () => {
 
-    items.set({}, {});
+    items.set({}, () => {});
 
     expect(() => underTest(items, 5)).to.throw;
   });
